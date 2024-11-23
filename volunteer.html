@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Opportunities | GSU PIN</title>
+    <link rel="stylesheet" href="css/volunteer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Volunteer Opportunities</h1>
+        <p>Find volunteer opportunities and contribute to the GSU community.</p>
+    </header>
+
+    <main class="volunteer-page">
+        <!-- Filter Panel -->
+        <aside class="filter-panel">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <div class="filter-group">
+                    <label for="campus">Campus:</label>
+                    <select id="campus" multiple>
+                        <option value="downtown">Downtown</option>
+                        <option value="alpharetta">Alpharetta</option>
+                        <option value="decatur">Decatur</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="organization">Organization:</label>
+                    <select id="organization" multiple>
+                        <option value="paws-for-a-cause">Paws for a Cause</option>
+                        <option value="community-service">Community Service Corps</option>
+                    </select>
+                </div>
+                <button type="button" id="apply-filters">Apply Filters</button>
+            </form>
+        </aside>
+
+        <!-- Volunteer Opportunities List -->
+        <section class="volunteer-list">
+            <h2>Upcoming Volunteer Opportunities</h2>
+            <div id="volunteer-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Georgia State University | Contact: involvement@gsu.edu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

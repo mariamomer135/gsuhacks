@@ -1,0 +1,222 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    color: #002A6C;
+}
+
+
+header.hero-section {
+    position: relative;
+    height: 80vh;
+    background: linear-gradient(135deg, #003DA5, #0078D7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #002A6C;
+    background-color: #FFD700;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+.user-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.rewards {
+    background-color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+button.logout {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF4C4C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.logout:hover {
+    transform: scale(1.05);
+}
+
+button.logout:focus {
+    outline: none;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#volunteer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#volunteer .section-header h2 {
+    color: #0033a0;
+    font-size: 2rem;
+}
+
+#volunteer .section-header p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#volunteer button {
+    background-color: #0033a0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#volunteer button:hover {
+    background-color: #001f73;
+}
+
+
+.volunteer-page {
+    display: flex;
+    padding: 20px;
+}
+
+.filter-panel {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 5px;
+}
+
+.volunteer-list {
+    flex: 1;
+}
+
+.volunteer-card {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-card h3 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #0065b3; /* GSU Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #004a8b; /* Darker blue */
+}
+

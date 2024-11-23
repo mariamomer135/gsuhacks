@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join a Club | GSU PIN</title>
+    <link rel="stylesheet" href="css/join-club.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Join a Club</h1>
+        <p>Discover student organizations and find your community at GSU.</p>
+    </header>
+
+    <main class="clubs-page">
+        <!-- Filter Panel -->
+        <aside class="filter-panel">
+            <h2>Filters</h2>
+            <form id="club-filter-form">
+                <div class="filter-group">
+                    <label for="interests">Interests:</label>
+                    <select id="interests" multiple>
+                        <option value="technology">Technology</option>
+                        <option value="arts">Arts</option>
+                        <option value="sports">Sports</option>
+                        <option value="volunteering">Volunteering</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="campus-club">Campus:</label>
+                    <select id="campus-club" multiple>
+                        <option value="downtown">Downtown</option>
+                        <option value="alpharetta">Alpharetta</option>
+                        <option value="decatur">Decatur</option>
+                    </select>
+                </div>
+                <button type="button" id="apply-club-filters">Apply Filters</button>
+            </form>
+        </aside>
+
+        <!-- Clubs List -->
+        <section class="clubs-list">
+            <h2>Clubs to Explore</h2>
+            <div id="clubs-container">
+                <!-- Placeholder Club Cards -->
+                <div class="club-card">
+                    <h3>Panther Coding Club</h3>
+                    <p>Connect with aspiring developers and work on exciting projects.</p>
+                    <button>Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>Photography Society</h3>
+                    <p>Capture and share GSU's best moments with fellow enthusiasts.</p>
+                    <button>Join</button>
+                </div>
+                <div class="club-card">
+                    <h3>Dance Crew</h3>
+                    <p>Join a vibrant group of dancers and showcase your talent.</p>
+                    <button>Join</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Georgia State University | Contact: involvement@gsu.edu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

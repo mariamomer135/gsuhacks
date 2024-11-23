@@ -1,0 +1,195 @@
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    color: #002A6C;
+}
+header.hero-section {
+    position: relative;
+    height: 80vh;
+    background: linear-gradient(135deg, #003DA5, #0078D7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #002A6C;
+    background-color: #FFD700;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+.user-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.rewards {
+    background-color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+button.logout {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF4C4C;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.logout:hover {
+    transform: scale(1.05);
+}
+
+button.logout:focus {
+    outline: none;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #003DA5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/* Main styling for Join a Club Page */
+
+
+/* Featured Events Section */
+/* Featured Events Section */
+.featured-events {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events-scroll-container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.event-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px; 
+    height: 150px; /* Increase size */
+    margin-right: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    animation: scrollEvents 30s linear infinite; /* Slower scrolling speed */
+}
+
+.event-card img {
+    width: 100%;
+    height: 500px;  /* Increase image size */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-card h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #0033a0;
+}
+
+.event-card p {
+    color: #555;
+}
+
+/* Animation for scrolling the events */
+@keyframes scrollEvents {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%); /* Move 3 cards */
+    }
+}
+

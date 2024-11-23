@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Events | GSU PIN</title>
+    <link rel="stylesheet" href="css/explore-events.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Explore Events</h1>
+        <p>Discover upcoming events and filter them to find what interests you.</p>
+    </header>
+
+    <main class="events-page">
+        <!-- Filter Panel -->
+        <aside class="filter-panel">
+            <h2>Filters</h2>
+            <form id="filter-form">
+                <div class="filter-group">
+                    <label for="campus">Campus:</label>
+                    <select id="campus" multiple>
+                        <option value="downtown">Downtown</option>
+                        <option value="alpharetta">Alpharetta</option>
+                        <option value="decatur">Decatur</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="organization">Organization:</label>
+                    <select id="organization" multiple>
+                        <option value="coding-club">Coding Club</option>
+                        <option value="dance-crew">Dance Crew</option>
+                        <option value="student-gov">Student Government</option>
+                    </select>
+                </div>
+                <button type="button" id="apply-filters">Apply Filters</button>
+            </form>
+        </aside>
+
+        <!-- Events List -->
+        <section class="events-list">
+            <h2>Upcoming Events</h2>
+            <div id="events-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Georgia State University | Contact: involvement@gsu.edu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

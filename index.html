@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSU Panther Involvement Network</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to GSU PIN</h1>
+            <p>Find events, clubs, and opportunities that connect you to the GSU community.</p>
+            <div class="hero-buttons">
+                <button onclick="exploreEvents()">Explore Events</button>
+                <button onclick="joinClubs()">Join a Club</button>
+            </div>
+        </div>
+        <!-- User Info Section -->
+        <div class="user-info">
+            <span>Hi, <strong id="username">Username</strong>!</span>
+            <div class="rewards">
+                <span>Your Rewards: 120 points</span>
+            </div>
+            <button class="logout" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <section id="featured" class="featured-events">
+        <div class="section-header">
+            <h2>Featured Events This Week</h2>
+        </div>
+        <div class="events-scroll-container">
+            <div class="event-card">
+                <img src="event1.jpg" alt="Hackathon">
+                <h3>GSU Hackathon 2024</h3>
+                <p>24-hour coding challenge. Prizes for top teams!</p>
+            </div>
+            <div class="event-card">
+                <img src="event2.jpg" alt="Open Mic">
+                <h3>Open Mic Night</h3>
+                <p>Showcase your talent at Student Center West.</p>
+            </div>
+            <div class="event-card">
+                <img src="event3.jpg" alt="Charity Run">
+                <h3>Charity Run</h3>
+                <p>Help raise funds for local causes.</p>
+            </div>
+            <div class="event-card">
+                <img src="event4.jpg" alt="Movie Night">
+                <h3>Outdoor Movie Night</h3>
+                <p>Catch a classic film under the stars.</p>
+            </div>
+            <div class="event-card">
+                <img src="event5.jpg" alt="Art Exhibit">
+                <h3>Art Exhibit: GSU Creatives</h3>
+                <p>Explore student art at the Student Center.</p>
+            </div>
+            <div class="event-card">
+                <img src="event6.jpg" alt="Career Fair">
+                <h3>Career Fair</h3>
+                <p>Connect with top employers for career opportunities.</p>
+            </div>
+            <div class="event-card">
+                <img src="event7.jpg" alt="Volunteer Day">
+                <h3>Volunteer Day</h3>
+                <p>Give back by helping local communities.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="divider"></div>
+
+    <section id="clubs">
+        <div class="section-header">
+            <h2>Clubs to Explore</h2>
+            <p>Discover a club that matches your interests and passions.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>Panther Coding Club</h3>
+                <p>Connect with aspiring developers and build cool projects.</p>
+            </div>
+            <div class="card">
+                <h3>GSU Dance Crew</h3>
+                <p>Join a vibrant group of talented dancers.</p>
+            </div>
+            <div class="card">
+                <h3>Photography Society</h3>
+                <p>Learn photography and capture your GSU memories.</p>
+            </div>
+        </div>
+    </section>
+    <section id="volunteer">
+        <div class="section-header">
+            <h2>Volunteer with Paws for a Cause</h2>
+            <p>Give back to the community through volunteer opportunities at GSU. Join Paws for a Cause and make a difference!</p>
+            <button onclick="window.location.href='volunteer.html'">Join Paws for a Cause</button>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Georgia State University | Contact: involvement@gsu.edu</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
